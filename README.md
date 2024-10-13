@@ -1,38 +1,66 @@
-# Taller-BDD
+# Taller de Base de Datos - Pokémon
 
-Trabajo Pokemon
+**Trabajo:** Base de datos Pokémon  
+**Integrantes:**  
+- Leonardo Farías  
+- Javier Nanco  
+- Nicolás Pozo  
+**Profesor:** Jonathan Sepúlveda  
+**Fecha de creación:** 29/06/2023  
+**Última modificación:** 04/07/2023  
+**Fecha de entrega:** 06/07/2023  
 
-Integrantes:	Leonardo Farias
-				      Javier Nanco
-				      Nicolas Pozo
+## Descripción
 
-Porfesor: Jonathan Sepulveda
+Ash Ketchum necesita una base de datos detallada sobre las ciudades que visita, para evitar sorpresas inesperadas y mejorar su desempeño en los gimnasios. Este proyecto tiene como objetivo crear una base de datos que almacene toda la información relevante sobre las ciudades, gimnasios, centros Pokémon y tiendas que Ash encontrará en su viaje.
 
-Fecha de creacion:  			29/06/2023
+## Requisitos del Proyecto
 
-Ultima Fecha de modificacion:	04/07/2023
+El sistema debe incluir los siguientes elementos:
 
-Fecha de entrega:				  06/07/2023			
+### Ciudades
+- **Mínimo 20 ciudades**: Cada ciudad debe tener un nombre, un código único y estar relacionada con su respectivo gimnasio, centro Pokémon y tienda.
+  
+### Centros Pokémon
+- **Información de las enfermeras**: Cada centro debe registrar el nombre de la enfermera a cargo.
+- **Pokémon atendidos**: Cada centro debe almacenar detalles de los últimos 151 Pokémon atendidos (sin repetir nombres), con los siguientes atributos:
+  - Nombre del Pokémon
+  - Tipo primario y tipo secundario
+  - HP, Ataque, Defensa, Tipo de Ataque
+  - Posición en el Pokédex (número)
 
-Ash necesita urgentemente una base de datos sobre las ciudades por las que viaja, que
-almacene los datos relevantes sobre esta, dado que no quiere seguir encontrándose con
-sorpresas ni perdiendo en los gimnasios.
+### Tiendas
+- Cada tienda debe vender **objetos con un código específico**, y se debe almacenar el siguiente detalle:
+  - Nombre del objeto
+  - Tipo de objeto (Pokéball o Soporte)
+  - Stock disponible
+  - Precio
 
-Se sabe que las ciudades ( minimo 20 ciudades con nombre, codigo unico y relacion con su
-respectivo gimnasio, crentro pokemon, tienda) tienen un centro pokemon (necesitamos
-saber el nombre de la enfermera, un detalle de los ultimos 151 pokemones (sin repetir
-nombres) que atendio, clasificando a cada pokemon según sus atributos (nombre de
-pokemon, tipo primario, tipo secundario, HP, Ataque, Defensa, Tipo de Ataque, posición en el
-pokedex ( número)). y una tienda. Todos estos se identifican por un código específico
-y se debe conocer la ciudad a la que pertenecen.
+#### Tipos de Pokéballs:
+- Pokéball
+- Superball
+- Ultraball
+- Masterball
 
-Sabemos que las tiendas venden muchos objetos con un código específico (se necesita saber
-el stock de cada objeto, su precio y nombre del objeto ). Estos pueden ser tipo Pokeball
-o Soporte.
+#### Tipos de objetos de soporte:
+- Poción
+- Poción Máxima
+- Revivir
+- Revivir Máximo
+- Caramelo, entre otros
 
-Dentro de pokeball tenemos los siguientes tipos (poke ball, super ball, ultra ball y master
-ball ). De los objetos de soporte tenemos distintos tipos ( posión, posición maxima, revivir,
-revivir máximo, caramelo, etc ), se requiere poblar con un minimo de 30 objetos distintos.
-Cada ciudad tiene un único gimnasio. Sobre este necesitamos saber el nombre del líder de
-gimnasio, la especialidad (agua, planta, siniestro, etc) y la medalla que entrega. Debe ser
-poblada con un minimo de 20 lideres distintos.
+La tienda debe tener un **mínimo de 30 objetos diferentes**.
+
+### Gimnasios
+Cada ciudad tiene un gimnasio, y se debe registrar la siguiente información:
+- **Nombre del líder de gimnasio**
+- **Especialidad**: Tipo de Pokémon que maneja (agua, planta, siniestro, etc.)
+- **Medalla**: Nombre de la medalla que otorga al derrotar al líder.
+
+Debe incluir un **mínimo de 20 líderes de gimnasio** distintos.
+
+## Objetivo del Proyecto
+
+Este proyecto está diseñado para proporcionar a Ash una herramienta robusta para planificar mejor sus viajes, conocer las características de las ciudades y sus gimnasios, así como gestionar los recursos disponibles en las tiendas y centros Pokémon, ayudando a mejorar su desempeño como entrenador Pokémon.
+
+
